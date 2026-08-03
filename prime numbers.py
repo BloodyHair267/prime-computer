@@ -46,9 +46,7 @@ if 0 in primelist:
 
 end = time.perf_counter()
 
-
-
-print(primelist)
+print("Finished computing")
 print(f"\nTime elapsed: {end-start:.6f} seconds")
 
 with open(r"prime generator\primes.txt", "w") as file:
@@ -59,6 +57,8 @@ f"""Primes from {low_lim}-{up_lim}
 {primelist}
 
 Total of {len(primelist)} primes
-Elapsed Time: {end-start:6f} seconds
+Elapsed Time: {end-start:.6f} seconds
 Density: {100*((len(primelist))/(up_lim-low_lim+1)):.3f}%"""
 )
+
+print("Details in primes.txt")
