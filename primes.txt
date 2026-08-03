@@ -1,0 +1,7 @@
+Primes from 999900-1000000
+
+[999907, 999917, 999931, 999953, 999959, 999961, 999979, 999983]
+
+Total of 8 primes
+Elapsed Time: 6.606411 seconds
+Density: 7.921%
