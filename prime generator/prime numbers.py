@@ -28,15 +28,13 @@ primelist = []
 start = time.perf_counter()
 
 for i in range(low_lim, up_lim + 1):
-    divisors = 0
     if i % 2 == 0 and i != 2:
         continue
 
     for j in range(2, i):
         if i % j == 0:
-            divisors += 1
-
-    if divisors == 0:
+            break
+    else:
         primelist.append(i)
 
 if 1 in primelist:
