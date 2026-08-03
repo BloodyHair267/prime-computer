@@ -11,5 +11,6 @@ This simple python code computes prime numbers in a selected range of numbers
 **WARNING**: At larger scale, computations rise quickly - the current algorithm has approximately O(n^2) complexity, so computation time increases even faster as the input size increases
 
 ## Usage
-- There are no restrictions for where, or how you can use this code, it is completetly up to you.
-- A feedback is always apprecieted! :D 
+- There are no restrictions for where, or how you can use this code, it is completetly **up to you**.
+- Recommended to use Visual Studio Code for running the program
+- A feedback is always apprecieted!
