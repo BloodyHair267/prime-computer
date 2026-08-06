@@ -1,16 +1,34 @@
 # prime-computer
-This simple python code computes prime numbers in a selected range of numbers
+
+A simple Python program that computes all prime numbers within a user-defined range.
 
 ## How it works
-- You choose a range of numbers
-- The code will compute all prime numbers within that range
-- It checks each number how many divisors it has in total
-  (for e.g. 6 -> 1,2,3,6 -> too much; 7 -> 1,7 -> prime)
-- After that it gives you the list of primes in primes.txt, and the **Total amount of primes**, the **Elapsed time**, and its **Density**
 
-**WARNING**: At larger scale, computations rise quickly - the current algorithm has approximately O(n^2) time complexity, so computation time increases even faster as the input size increases
+* Enter a lower and upper limit.
+* The program computes every prime number within the selected range.
+* To determine whether a number is prime, it checks for divisors other than **1** and the number itself.
+* For better performance, the program:
+
+  * Skips all even numbers (except **2**).
+  * Checks only odd divisors.
+  * Tests divisibility only up to the square root of each candidate number.
+* After the computation is complete, the program automatically logs each run containing:
+
+    * The complete list of prime numbers.
+    * The total number of primes found.
+    * The elapsed computation time.
+    * The prime density within the selected range.
+
+## Requirements
+
+* Python 3.x
+* No external libraries are required.
 
 ## Usage
-- There are no restrictions for where, or how you can use this code, it is completetly **up to you**.
-- Recommended to use Visual Studio Code inside the terminal for running the program
-- A feedback is always apprecieted!
+
+1. Run the program.
+2. Enter the lower and upper limits when prompted.
+3. Wait for the computation to finish.
+4. View the results in the generated log file (it is mentioned in the terminal).
+
+Feel free to use, modify, or improve this project. Feedback and suggestions are always appreciated!
