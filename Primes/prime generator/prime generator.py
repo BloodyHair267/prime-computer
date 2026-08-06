@@ -28,7 +28,7 @@ primelist = []
 
 start = time.perf_counter()
 
-for i in range(low_lim, up_lim+1):
+for i in range(max(low_lim, 2), up_lim+1):
     if i == 2:
         primelist.append(i)
         continue
@@ -42,9 +42,6 @@ for i in range(low_lim, up_lim+1):
 
     else:
         primelist.append(i)
-
-if 1 in primelist:
-    primelist.remove(1) 
 
 end = time.perf_counter()
 
